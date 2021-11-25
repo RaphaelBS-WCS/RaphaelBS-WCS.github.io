@@ -1,0 +1,187 @@
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap');
+
+body {
+    background-color: black;
+}
+
+.navbar-brand {
+	font-family: "Kaushan Script";
+	color: white;
+	font-size: 50px;
+}
+
+.navbar-brand:hover {
+	color: white;
+}
+
+header .nav-link{
+	font-family: "Kaushan Script";
+	color: white;
+	font-size: 50px;
+}
+
+header .nav-link:hover{
+	color: rgb(142, 119, 182);
+}
+
+.cercle1 {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    position: relative;
+    margin-right: auto;
+    margin-left: auto;
+    z-index: 10;
+    margin-top: 5px;
+    background: rgb(251,0,148);
+	background: radial-gradient(circle, rgba(251,0,148,1) 0%, rgba(0,0,255,1) 100%);
+}
+.cercle2 {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    position: relative;
+    margin-right: auto;
+    margin-left: auto;
+    z-index: 10;
+    margin-top: 5px;
+    background: rgb(0,0,255);
+background: radial-gradient(circle, rgba(0,0,255,1) 0%, rgba(0,255,0,1) 100%);
+}
+.cercle3 {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    position: relative;
+    margin-right: auto;
+    margin-left: auto;
+    z-index: 10;
+    margin-top: 5px;
+    background: rgb(0,255,0);
+background: radial-gradient(circle, rgba(0,255,0,1) 0%, rgba(255,255,0,1) 100%);
+}
+.cercle4 {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    position: relative;
+    margin-right: auto;
+    margin-left: auto;
+    z-index: 10;
+    margin-top: 5px;
+    background: rgb(255,0,0);
+background: radial-gradient(circle, rgba(255,0,0,1) 0%, rgba(251,0,148,1) 100%);
+}
+.cercle5 {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    position: relative;
+    margin-right: auto;
+    margin-left: auto;
+    z-index: 10;
+    margin-top: 5px;
+    background: rgb(0,0,255);
+background: radial-gradient(circle, rgba(0,0,255,1) 0%, rgba(0,255,0,1) 100%);
+}
+.cercle6 {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    position: relative;
+    margin-right: auto;
+    margin-left: auto;
+    z-index: 10;
+    margin-top: 5px;
+    background: rgb(255,0,0);
+background: radial-gradient(circle, rgba(255,0,0,1) 0%, rgba(251,0,148,1) 100%);
+}
+
+.select-button {
+    width: 100px;
+}
+
+/***** Button Select Style *****/
+
+@import url('https://fonts.googleapis.com/css?family=Lato:100,300,400');
+@import url('https://fonts.googleapis.com/css?family=Roboto:100');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/***** Rainbow Effect *****/
+
+#item-card {
+  position: relative;
+  width: 260px;
+  height: 260px;
+  z-index: 5;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+#item-card > div {
+  position: relative;
+  background: -webkit-gradient(linear, left bottom, left top, from(#000), to(#262626));
+  background: -webkit-linear-gradient(bottom, #000, #262626);
+  background: -o-linear-gradient(bottom, #000, #262626);
+  background: linear-gradient(0deg, #000, #262626);
+  z-index: 2;
+  width: 100%;
+  height: 100%;
+}
+#item-card:before, #item-card:after {
+  content: "";
+  position: absolute;
+  left: -2px;
+  top: -2px;
+  background: -webkit-linear-gradient(45deg, #fb0094, #00f, #0f0, #ff0, #f00, #fb0094, #00f, #0f0, #ff0, #f00);
+  background: -o-linear-gradient(45deg, #fb0094, #00f, #0f0, #ff0, #f00, #fb0094, #00f, #0f0, #ff0, #f00);
+  background: linear-gradient(45deg, #fb0094, #00f, #0f0, #ff0, #f00, #fb0094, #00f, #0f0, #ff0, #f00);
+  background-size: 400%;
+  width: calc(100% + 4px);
+  height: calc(100% + 4px);
+  z-index: 1;
+  -webkit-animation: animation 20s linear infinite;
+  animation: animation 20s linear infinite;
+  border-radius: 50%;
+}
+#item-card:after {
+  -webkit-filter: blur(20px);
+  filter: blur(20px);
+}
+@-webkit-keyframes animation {
+  0% {
+    background-position: 0 0;
+ }
+  50% {
+    background-position: 300% 0;
+ }
+  100% {
+    background-position: 0 0;
+ }
+}
+@keyframes animation {
+  0% {
+    background-position: 0 0;
+ }
+  50% {
+    background-position: 300% 0;
+ }
+  100% {
+    background-position: 0 0;
+ }
+}
+
+/***** Background *****/
+canvas {
+  
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: black;
+}
+
