@@ -68,7 +68,7 @@
 			<div class="row justify-content-center mt-3">
 				<div class="col-5 text-center">
 					<div id="item-card">
-						<button class="cercle5"  v-on:click=play("e.wav")></button>
+						<button class="cercle5"  v-on:click=play("e.wav") role="loop"></button>
 					</div>
 				</div>
 				<div class="col-5 text-center">
@@ -80,25 +80,24 @@
 		</div>
     </div>
     <script>
+		var path = "styles/batterie/";
 		var app = new Vue({
 			el: "#app",
 			data: {
 				styles: ["batterie", "electro"],
-				path: "styles/batterie/",
 			},
 			methods: {
 				setStyle: function(style) {
 					path = "styles/" + style + "/";
 				},
 				play: function(wav) {
-					let play = new Audio(path + wav)
+					let play = new Audio(path + wav);
 					play.play();
 					play.loop = false;
 				}
 			}
 		})
 	</script>
-	
 	<!-- Script bacground  effect -->
 	<script>var w = c.width = window.innerWidth,
 		h = c.height = window.innerHeight,
