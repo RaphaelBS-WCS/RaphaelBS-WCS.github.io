@@ -2,7 +2,7 @@
 
 :root {
   --size-button: 100%;
-  --background-button : var(--size-button) - 6%;
+  --background-button : var(--size-button) - 5%;
 }
 
 body {
