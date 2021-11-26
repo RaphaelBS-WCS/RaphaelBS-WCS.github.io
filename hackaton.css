@@ -13,7 +13,7 @@ body {
   margin-left: 50px;
   font-family: "Kaushan Script";
   color: white;
-  font-size: 30px;
+  font-size: 50px;
 }
 
 .navbar-brand:hover {
@@ -31,13 +31,13 @@ body {
 }
 
 .navbar-nav {
-  justify-content: end;
+  justify-self: end;
 }
 
 .nav-link {
   font-family: "Kaushan Script";
   color: white;
-  font-size: 30px;
+  font-size: 40px;
 }
 
 @media screen and (max-width: 992px) {
