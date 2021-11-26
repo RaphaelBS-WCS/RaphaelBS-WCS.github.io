@@ -1,0 +1,23 @@
+{
+  "name": "raphaelbs-wcs.github.io",
+  "version": "1.0.0",
+  "description": "WildSoundMaker",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RaphaelBS-WCS/RaphaelBS-WCS.github.io.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/RaphaelBS-WCS/RaphaelBS-WCS.github.io/issues"
+  },
+  "homepage": "https://github.com/RaphaelBS-WCS/RaphaelBS-WCS.github.io#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "serve-static": "^1.14.1"
+  }
+}
