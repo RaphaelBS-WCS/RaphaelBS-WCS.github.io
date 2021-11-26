@@ -1,115 +1,137 @@
-@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap");
 
 :root {
-  --size-button: 100%;
-  --background-button : var(--size-button) - 5%;
+  --size-button: 250px;
+  --background-button: calc(var(--size-button) + 10px);
 }
 
 body {
-    background-color: black;
+  background-color: black;
 }
 
 .navbar-brand {
-	font-family: "Kaushan Script";
-	color: white;
-	font-size: 50px;
+  font-family: "Kaushan Script";
+  color: white;
+  font-size: 50px;
 }
 
 .navbar-brand:hover {
-	color: white;
+  color: white;
 }
 
-header .nav-link{
-	font-family: "Kaushan Script";
-	color: white;
-	font-size: 50px;
+header .nav-link {
+  font-family: "Kaushan Script";
+  color: white;
+  font-size: 50px;
 }
 
-header .nav-link:hover{
-	color: rgb(142, 119, 182);
+header .nav-link:hover {
+  color: rgb(142, 119, 182);
 }
 
 .cercle1 {
-    width: var(--size-button);
-    height: var(--size-button);
-    border-radius: 50%;
-    position: relative;
-    margin-right: auto;
-    margin-left: auto;
-    z-index: 10;
-    margin-top: var(--background-button);
-    background: rgb(0,255,160);
-    background: radial-gradient(circle, rgba(0,255,160,1) 0%, rgba(1,0,255,1) 100%);
+  width: var(--size-button);
+  height: var(--size-button);
+  border-radius: 50%;
+  position: relative;
+  margin-right: auto;
+  margin-left: auto;
+  z-index: 10;
+  margin-top: 2%;
+  background: rgb(0, 255, 160);
+  background: radial-gradient(circle,
+      rgba(0, 255, 160, 1) 0%,
+      rgba(1, 0, 255, 1) 100%);
 }
+
 .cercle2 {
-    width: var(--size-button);
-    height: var(--size-button);
-    border-radius: 50%;
-    position: relative;
-    margin-right: auto;
-    margin-left: auto;
-    z-index: 10;
-    margin-top: var(--background-button);
-    background: rgb(255,250,0);
-    background: radial-gradient(circle, rgba(255,250,0,1) 0%, rgba(255,0,0,1) 100%);
+  width: var(--size-button);
+  height: var(--size-button);
+  border-radius: 50%;
+  position: relative;
+  margin-right: auto;
+  margin-left: auto;
+  z-index: 10;
+  margin-top: 2%;
+  background: rgb(255, 250, 0);
+  background: radial-gradient(circle,
+      rgba(255, 250, 0, 1) 0%,
+      rgba(255, 0, 0, 1) 100%);
 }
+
 .cercle3 {
-    width: var(--size-button);
-    height: var(--size-button);
-    border-radius: 50%;
-    position: relative;
-    margin-right: auto;
-    margin-left: auto;
-    z-index: 10;
-    margin-top: var(--background-button);
-    background: rgb(255,255,0);
-    background: radial-gradient(circle, rgba(255,255,0,1) 0%, rgba(0,255,0,1) 100%);
+  width: var(--size-button);
+  height: var(--size-button);
+  border-radius: 50%;
+  position: relative;
+  margin-right: auto;
+  margin-left: auto;
+  z-index: 10;
+  margin-top: 2%;
+  background: rgb(255, 255, 0);
+  background: radial-gradient(circle,
+      rgba(255, 255, 0, 1) 0%,
+      rgba(0, 255, 0, 1) 100%);
+  -webkit-animation: none;
+  -moz-animation: none;
+  -ms-animation: none;
+  animation: none;
 }
+
 .cercle4 {
-    width: var(--size-button);
-    height: var(--size-button);
-    border-radius: 50%;
-    position: relative;
-    margin-right: auto;
-    margin-left: auto;
-    z-index: 10;
-    margin-top: var(--background-button);
-    background: rgb(246,0,255);
-    background: radial-gradient(circle, rgba(246,0,255,1) 0%, rgba(255,0,0,1) 100%);
+  width: var(--size-button);
+  height: var(--size-button);
+  border-radius: 50%;
+  position: relative;
+  margin-right: auto;
+  margin-left: auto;
+  z-index: 10;
+  margin-top: 2%;
+  background: rgb(246, 0, 255);
+  background: radial-gradient(circle,
+      rgba(246, 0, 255, 1) 0%,
+      rgba(255, 0, 0, 1) 100%);
 }
+
 .cercle5 {
-    width: var(--size-button);
-    height: var(--size-button);
-    border-radius: 50%;
-    position: relative;
-    margin-right: auto;
-    margin-left: auto;
-    z-index: 10;
-    margin-top: var(--background-button);
-    background: rgb(254,0,255);
-background: radial-gradient(circle, rgba(254,0,255,1) 0%, rgba(255,254,0,1) 100%);
+  width: var(--size-button);
+  height: var(--size-button);
+  border-radius: 50%;
+  position: relative;
+  margin-right: auto;
+  margin-left: auto;
+  z-index: 10;
+  margin-top: 2%;
+  background: rgb(254, 0, 255);
+  background: radial-gradient(circle,
+      rgba(254, 0, 255, 1) 0%,
+      rgba(255, 254, 0, 1) 100%);
 }
+
 .cercle6 {
-    width: var(--size-button);
-    height: var(--size-button);
-    border-radius: 50%;
-    position: relative;
-    margin-right: auto;
-    margin-left: auto;
-    z-index: 10;
-    margin-top: var(--background-button);
-    background: rgb(254,0,255);
-background: radial-gradient(circle, rgba(254,0,255,1) 0%, rgba(255,0,187,1) 100%);
+  width: var(--size-button);
+  height: var(--size-button);
+  border-radius: 50%;
+  position: relative;
+  margin-right: auto;
+  margin-left: auto;
+  z-index: 10;
+  margin-top: 2%;
+  background: rgb(254, 0, 255);
+  background: radial-gradient(circle,
+      rgba(254, 0, 255, 1) 0%,
+      rgba(255, 0, 187, 1) 100%);
 }
 
 .select-button {
-    width: 100px;
+  width: 100px;
 }
 
 /***** Button Select Style *****/
 
-@import url('https://fonts.googleapis.com/css?family=Lato:100,300,400');
-@import url('https://fonts.googleapis.com/css?family=Roboto:100');
+@import url("https://fonts.googleapis.com/css?family=Lato:100,300,400");
+@import url("https://fonts.googleapis.com/css?family=Roboto:100");
+
 * {
   margin: 0;
   padding: 0;
@@ -120,17 +142,22 @@ background: radial-gradient(circle, rgba(254,0,255,1) 0%, rgba(255,0,187,1) 100%
 
 #item-card {
   position: relative;
-  width: 260px;
-  height: 260px;
+  width: var(--background-button);
+  height: var(--background-button);
   z-index: 5;
   margin-left: auto;
   margin-right: auto;
   margin-top: auto;
   margin-bottom: auto;
 }
-#item-card > div {
+
+#item-card>div {
   position: relative;
-  background: -webkit-gradient(linear, left bottom, left top, from(#000), to(#262626));
+  background: -webkit-gradient(linear,
+      left bottom,
+      left top,
+      from(#000),
+      to(#262626));
   background: -webkit-linear-gradient(bottom, #000, #262626);
   background: -o-linear-gradient(bottom, #000, #262626);
   background: linear-gradient(0deg, #000, #262626);
@@ -138,14 +165,46 @@ background: radial-gradient(circle, rgba(254,0,255,1) 0%, rgba(255,0,187,1) 100%
   width: 100%;
   height: 100%;
 }
-#item-card:before, #item-card:after {
+
+#item-card:before,
+#item-card:after {
   content: "";
   position: absolute;
   left: -2px;
   top: -2px;
-  background: -webkit-linear-gradient(45deg, #fb0094, #00f, #0f0, #ff0, #f00, #fb0094, #00f, #0f0, #ff0, #f00);
-  background: -o-linear-gradient(45deg, #fb0094, #00f, #0f0, #ff0, #f00, #fb0094, #00f, #0f0, #ff0, #f00);
-  background: linear-gradient(45deg, #fb0094, #00f, #0f0, #ff0, #f00, #fb0094, #00f, #0f0, #ff0, #f00);
+  background: -webkit-linear-gradient(45deg,
+      #fb0094,
+      #00f,
+      #0f0,
+      #ff0,
+      #f00,
+      #fb0094,
+      #00f,
+      #0f0,
+      #ff0,
+      #f00);
+  background: -o-linear-gradient(45deg,
+      #fb0094,
+      #00f,
+      #0f0,
+      #ff0,
+      #f00,
+      #fb0094,
+      #00f,
+      #0f0,
+      #ff0,
+      #f00);
+  background: linear-gradient(45deg,
+      #fb0094,
+      #00f,
+      #0f0,
+      #ff0,
+      #f00,
+      #fb0094,
+      #00f,
+      #0f0,
+      #ff0,
+      #f00);
   background-size: 400%;
   width: calc(100% + 4px);
   height: calc(100% + 4px);
@@ -154,39 +213,86 @@ background: radial-gradient(circle, rgba(254,0,255,1) 0%, rgba(255,0,187,1) 100%
   animation: animation 20s linear infinite;
   border-radius: 50%;
 }
+
 #item-card:after {
   -webkit-filter: blur(20px);
   filter: blur(20px);
 }
+
 @-webkit-keyframes animation {
   0% {
     background-position: 0 0;
- }
+  }
+
   50% {
     background-position: 300% 0;
- }
+  }
+
   100% {
     background-position: 0 0;
- }
+  }
 }
+
 @keyframes animation {
   0% {
     background-position: 0 0;
- }
+  }
+
   50% {
     background-position: 300% 0;
- }
+  }
+
   100% {
     background-position: 0 0;
- }
+  }
 }
 
 /***** Background *****/
 canvas {
-  
   position: absolute;
   top: 0;
   left: 0;
   background-color: black;
 }
 
+.cercle1:active,
+.cercle2:active,
+.cercle3:active,
+.cercle4:active,
+.cercle5:active,
+.cercle6:active {
+  cursor: pointer;
+
+  animation: pulse 0.1s 1.2 linear;
+}
+
+@-webkit-keyframes pulse {
+  0% {
+    -webkit-box-shadow: 0 0 0 0 rgba(0, 255, 0, 0.4);
+  }
+
+  70% {
+    -webkit-box-shadow: 0 0 0 50px rgba(255, 255, 0);
+  }
+
+  100% {
+    -webkit-box-shadow: 0 0 0 0 rgba(255, 0, 0, 0);
+  }
+}
+
+@keyframes pulse {
+  0% {
+    -moz-box-shadow: 0 0 0 0 rgba(0, 255, 0, 0.4);
+    box-shadow: 0 0 0 0 rgba(0, 255, 0, 0.4);
+  }
+
+  70% {
+    -moz-box-shadow: 0 0 0 calc(var(--size-button) / 3) rgba(255, 255, 0);
+    box-shadow: 0 0 0 calc(var(--size-button) / 3) rgba(255, 0, 0, 0);
+  }
+
+  100% {
+    -moz-box-shadow: 0 0 0 0 rgba(252, 1, 1, 0);
+    box-shadow: 0 0 0 0 rgba(255, 0, 0, 0);
+  }
+}
