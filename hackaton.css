@@ -1,8 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap");
 
 :root {
-  --size-button: 250px;
-  --background-button: calc(var(--size-button) + 10px);
+  --size-button: 20vh;
+  --background-button: calc(var(--size-button) + 1.5vh);
 }
 
 body {
@@ -10,23 +10,148 @@ body {
 }
 
 .navbar-brand {
+  margin-left: 50px;
   font-family: "Kaushan Script";
   color: white;
-  font-size: 50px;
+  font-size: 30px;
 }
 
 .navbar-brand:hover {
   color: white;
 }
 
-header .nav-link {
+.logo {
+  width: 70px;
+  height: 70px;
+}
+
+.fas {
+  color: white;
+  font-size: 45px;
+}
+
+.navbar-nav {
+  justify-content: end;
+}
+
+.nav-link {
   font-family: "Kaushan Script";
   color: white;
-  font-size: 50px;
+  font-size: 30px;
+}
+
+@media screen and (max-width: 992px) {
+
+  header {
+    width: 100%;
+  }
+
+  nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .navbar-brand {
+    font-size: 35px;
+  }
+
+  .fas {
+    color: white;
+    font-size: 30px;
+  }
+
+  .nav-link {
+    font-family: "Kaushan Script";
+    color: white;
+    font-size: 22px;
+  }
+
+  .logo {
+    width: 50px;
+    height: 50px;
+  }
 }
 
 header .nav-link:hover {
   color: rgb(142, 119, 182);
+}
+
+/* Grid */
+
+.wrapper {
+  margin-top: 20px;
+  justify-self: center;
+  justify-content: center;
+  width: auto;
+  height: auto;
+  display: grid;
+  /* grid-template-columns: repeat(2, 1fr); */
+  grid-auto-columns: minmax(50px, auto);
+  grid-auto-rows: minmax(50px, auto);
+  grid-gap: 80px 200px;
+}
+.one {
+  grid-column: 1;
+  grid-row: 1;
+}
+.two {
+  grid-column: 2;
+  grid-row: 1;
+}
+.three {
+  grid-column: 1;
+  grid-row: 2;
+}
+.four {
+  grid-column: 2;
+  grid-row: 2;
+}
+.five {
+  grid-column: 1;
+  grid-row: 3;
+}
+.six {
+  grid-column: 2;
+  grid-row: 3;
+}
+
+@media (max-width: 992px) {
+  .wrapper {
+    grid-gap: 5px;
+    margin-top: 10%;
+  }
+  .one {
+    grid-column: 1;
+    grid-row: 1;
+    justify-self: left;
+  }
+  .two {
+    grid-column: 2;
+    grid-row: 1;
+    justify-self: left;
+  }
+  .three {
+    grid-column: 1;
+    grid-row: 2;
+    justify-self: left;
+  }
+  .four {
+    grid-column: 2;
+    grid-row: 2;
+    justify-self: left;
+  }
+  .five {
+    grid-column: 1;
+    grid-row: 3;
+    justify-self: left;
+  }
+  .six {
+    grid-column: 2;
+    grid-row: 3;
+    justify-self: left;
+    ;
+  }
 }
 
 .cercle1 {
@@ -37,7 +162,8 @@ header .nav-link:hover {
   margin-right: auto;
   margin-left: auto;
   z-index: 10;
-  margin-top: 2%;
+  margin-top: 0.7vh;
+  margin-left: 0.7vh;
   background: rgb(0, 255, 160);
   background: radial-gradient(circle,
       rgba(0, 255, 160, 1) 0%,
@@ -52,7 +178,8 @@ header .nav-link:hover {
   margin-right: auto;
   margin-left: auto;
   z-index: 10;
-  margin-top: 2%;
+  margin-top: 0.7vh;
+  margin-left: 0.7vh;
   background: rgb(255, 250, 0);
   background: radial-gradient(circle,
       rgba(255, 250, 0, 1) 0%,
@@ -67,7 +194,8 @@ header .nav-link:hover {
   margin-right: auto;
   margin-left: auto;
   z-index: 10;
-  margin-top: 2%;
+  margin-top: 0.7vh;
+  margin-left: 0.7vh;
   background: rgb(255, 255, 0);
   background: radial-gradient(circle,
       rgba(255, 255, 0, 1) 0%,
@@ -86,7 +214,8 @@ header .nav-link:hover {
   margin-right: auto;
   margin-left: auto;
   z-index: 10;
-  margin-top: 2%;
+  margin-top: 0.7vh;
+  margin-left: 0.7vh;
   background: rgb(246, 0, 255);
   background: radial-gradient(circle,
       rgba(246, 0, 255, 1) 0%,
@@ -101,11 +230,12 @@ header .nav-link:hover {
   margin-right: auto;
   margin-left: auto;
   z-index: 10;
-  margin-top: 2%;
-  background: rgb(254, 0, 255);
-  background: radial-gradient(circle,
-      rgba(254, 0, 255, 1) 0%,
-      rgba(255, 254, 0, 1) 100%);
+  margin-top: 0.7vh;
+  margin-left: 0.7vh;
+  background: rgb(242,240,209);
+  background: radial-gradient(circle, 
+  rgba(242,240,209,1) 0%, 
+  rgba(249,6,2,1) 100%);
 }
 
 .cercle6 {
@@ -116,11 +246,12 @@ header .nav-link:hover {
   margin-right: auto;
   margin-left: auto;
   z-index: 10;
-  margin-top: 2%;
-  background: rgb(254, 0, 255);
-  background: radial-gradient(circle,
-      rgba(254, 0, 255, 1) 0%,
-      rgba(255, 0, 187, 1) 100%);
+  margin-top: 0.7vh;
+  margin-left: 0.7vh;
+  background: rgb(242,240,209);
+  background: radial-gradient(circle, 
+  rgba(242,240,209,1) 0%,
+  rgba(249,225,2,1) 100%);
 }
 
 .select-button {
@@ -287,8 +418,8 @@ canvas {
   }
 
   70% {
-    -moz-box-shadow: 0 0 0 calc(var(--size-button) / 3) rgba(255, 255, 0);
-    box-shadow: 0 0 0 calc(var(--size-button) / 3) rgba(255, 0, 0, 0);
+    -moz-box-shadow: 0 0 0 calc(var(--size-button) / 2.5) rgba(255, 255, 0);
+    box-shadow: 0 0 0 calc(var(--size-button) / 2.5) rgba(255, 0, 0, 0);
   }
 
   100% {

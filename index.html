@@ -17,6 +17,9 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="hackaton.css" />
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.js"></script>
     <script src="https://apis.google.com/js/platform.js" async defer></script>
   </head>
@@ -25,57 +28,39 @@
 	<canvas id="c"></canvas>
 		<header>
 			<nav class="navbar navbar-expand-lg">
-			<img class="logo borderrounded-circle me-3" src="/images/logo-music.png" width="100px"height="100px" alt="logo music">
+				<img class="logo borderrounded-circle me-3" src="/images/logo-music.png" alt="logo music">
 				<a class="navbar-brand mx-5 fw" href="#">Wild Sound Maker</a>
-				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-				<span class="navbar-toggler-icon"></span>
+				<button class="navbar-toggler " type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+					<i class="fas fa-drum"></i>
 				</button>
-				<div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-				<ul class="navbar-nav mx-5" v-for="style in styles">
-					<li class="nav-item active">
-					<a class="nav-link" href="#" v-on:click=setStyle(style)>{{ style }}<span class="sr-only">(current)</span></a>
-					</li>
-				</ul>
+				<div class="collapse navbar-collapse" id="navbarNav">
+					<ul class="navbar-nav mx-5" v-for="style in styles">
+						<li class="nav-item active">
+							<a class="nav-link" href="#" v-on:click=setStyle(style)>{{ style }}<span class="sr-only">(current)</span></a>
+						</li>
+					</ul>
 				</div>
 			</nav>
 		</header>
     <!--Section circle buttons-->
-		<div class="container">
-			<div class="row justify-content-center mt-3">
-				<div class="col-5 text-center justify-content-center">
-					<div id="item-card">
-						<button class="cercle1"  v-on:click=play("a.wav")></button>
-					</div>
-				</div>
-				<div class="col-5 text-center">
-					<div id="item-card">
-						<button class="cercle2"  v-on:click=play("b.wav")></button>
-					</div>
-				</div>
+		<div class="wrapper">
+			<div id="item-card" class="one">
+				<button class="cercle1"  v-on:click=play("a.wav")></button>
 			</div>
-			<div class="row justify-content-center mt-3">
-				<div class="col-5 text-center">
-					<div id="item-card">
-						<button class="cercle3"  v-on:click=play("c.wav")></button>
-					</div>
-				</div>
-				<div class="col-5 text-center">
-					<div id="item-card">
-						<button class="cercle4"  v-on:click=play("d.wav")></button>
-					</div>
-				</div>
+			<div id="item-card" class="two">
+				<button class="cercle2"  v-on:click=play("b.wav")></button>
 			</div>
-			<div class="row justify-content-center mt-3">
-				<div class="col-5 text-center">
-					<div id="item-card">
-						<button class="cercle5"  v-on:click=play("e.wav") role="loop"></button>
-					</div>
-				</div>
-				<div class="col-5 text-center">
-					<div id="item-card">
-						<button class="cercle6"  v-on:click=play("f.wav")></button>
-					</div>
-				</div>
+			<div id="item-card" class="three">
+				<button class="cercle3"  v-on:click=play("c.wav")></button>
+			</div>
+			<div id="item-card" class="four">
+				<button class="cercle4"  v-on:click=play("d.wav")></button>
+			</div>
+			<div id="item-card" class="five">
+				<button class="cercle5"  v-on:click=play("e.wav") role="loop"></button>
+			</div>
+			<div id="item-card" class="six">
+				<button class="cercle6"  v-on:click=play("f.wav")></button>
 			</div>
 		</div>
     </div>
@@ -264,6 +249,8 @@
 	  starter.y = h / 2;
 	  
 	  init();
-	} )</script>
+	} )
+	</script>
+	<script src="https://kit.fontawesome.com/5b0b013c1e.js" crossorigin="anonymous"></script>
   </body>
 </html>
